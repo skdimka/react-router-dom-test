@@ -9,8 +9,6 @@ const EditPost = () => {
             <p>To edit, enter editor mode</p>
             <br/>
             <Link to={`/posts/${id}`}> To post</Link>
-            <br/>
-            <Link to={"/posts"}>All posts</Link>
         </>
     );
 }

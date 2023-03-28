@@ -14,6 +14,7 @@ const Posts = () => {
     return ( 
          <div>
             <h1>Posts</h1> 
+            <Link to="/posts/new">Add new post</Link>
         {
             posts.map(post => (
                 <Link key={post.id} to={`/posts/${post.id}`}>
