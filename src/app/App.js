@@ -10,9 +10,6 @@ import RequireAuth from "./hoc/requireAuth";
 import CreatePost from "./pages/createPost";
 import { AuthProvider } from "./hoc/authProvider";
 
-
-
-
 function App() {
   return (
     <>
