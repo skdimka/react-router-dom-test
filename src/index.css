@@ -18,8 +18,9 @@
   
   header {
     background-color: var(--color-bg);
-    padding: 2rem 0;
+    padding: 2rem;
     text-align: center;
+    padding-left: 40%;
   }
   header > a {
     color: white;
@@ -59,4 +60,17 @@
   .active-link {
     color: var(--color-active);
     cursor: default;
+  }
+
+  login {
+    margin-left: 60%;
+  }
+
+  login > a {
+  color: white;
+  text-decoration: none;
+  }
+
+  login > a:hover {
+  text-decoration: underline;
   }
