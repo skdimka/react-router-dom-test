@@ -20,7 +20,7 @@
     background-color: var(--color-bg);
     padding: 2rem;
     text-align: center;
-    padding-left: 40%;
+    padding-left: 38%;
   }
   header > a {
     color: white;
@@ -29,6 +29,8 @@
   }
   header > a:hover {
     text-decoration: underline;
+    background-color: #175fdb2c;
+    border-radius: 0.5rem;
   }
   
   h1 {
@@ -63,7 +65,7 @@
   }
 
   login {
-    margin-left: 60%;
+    margin-left: 55%;
   }
 
   login > a {

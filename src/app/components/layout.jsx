@@ -13,12 +13,17 @@ const Layout = () => {
         <CustomLink to="posts" className={SetActive}>
           Posts
         </CustomLink>
-        <CustomLink to="Dashboard" className={SetActive}>
+        <CustomLink to="dashboard" className={SetActive}>
           Dashboard
         </CustomLink>
-        <CustomLink to="login" className={SetActive}>
-          Login
+        <CustomLink to="about" className={SetActive}>
+          About
         </CustomLink>
+        <login>
+          <CustomLink to="login" className={SetActive}>
+            Login
+          </CustomLink>
+        </login>
       </header>
 
       <main className="container">
