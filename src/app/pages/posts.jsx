@@ -67,7 +67,7 @@ async function getPosts() {
 export const postsLoader = async () => {
   const posts = getPosts();
 
-  if (!posts.length) {
+  if (posts.length) {
     throw json(
       { message: "Not Found", reason: "Wrong  url" },
       { status: "404" }

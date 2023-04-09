@@ -8,11 +8,11 @@ import Dashboard from "./pages/dashboard";
 import Home from "./pages/home";
 import Posts, { postsLoader } from "./pages/posts";
 import Post, { postLoader } from "./pages/post";
-import EditPost from "./pages/editPost";
+import EditPost, { updatePostAction } from "./pages/editPost";
 import { Layout } from "./components/layout";
 import LoginPage from "./pages/login";
 import RequireAuth from "./hoc/requireAuth";
-import CreatePost from "./pages/createPost";
+import CreatePost, { createPostAction } from "./pages/createPost";
 import { AuthProvider } from "./hoc/authProvider";
 import About from "./pages/about";
 import Team from "./pages/team";
@@ -31,7 +31,12 @@ const router = createBrowserRouter(
         errorElement={<ErrorPage />}
       />
       <Route path="posts/:id" element={<Post />} loader={postLoader} />
-      <Route path="posts/:id/edit" element={<EditPost />} />
+      <Route
+        path="posts/:id/edit"
+        element={<EditPost />}
+        loader={postLoader}
+        action={updatePostAction}
+      />
       <Route
         path="posts/new"
         element={
@@ -39,6 +44,7 @@ const router = createBrowserRouter(
             <CreatePost />
           </RequireAuth>
         }
+        action={createPostAction}
       />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="about" element={<About />} />
