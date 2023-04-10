@@ -47,6 +47,6 @@ async function getPostById(id) {
 
 export const postLoader = async ({ params }) => {
   const id = params.id;
-  return defer({ id, post: getPostById(id) });
+  return defer({ id, post: await getPostById(id) });
 };
 export default Post;
